@@ -124,14 +124,12 @@ class Chart
 
     draw_separator(context, width, height, scale_start, scale_end, scale)
 
-    colors = params[:color].split('-')
+    colors = params[:colors].split('-')
     datasets = params[:data].split('-')
+
     datasets.each_with_index do |data, i|
       data = data.split(',')
       data.map! {|value| value.to_i}
-      unless colors[i]
-        colors[i] = 'ff7f50'
-      end
       draw_pentagon(context, layout, width, height, scale_start, scale_end, data, colors[i])
     end
 
@@ -140,9 +138,6 @@ class Chart
       datasets.each_with_index do |data, i|
         data = data.split(',')
         data.map! {|value| value.to_i}
-        unless colors[i]
-          colors[i] = 'ff7f50'
-        end
         draw_expert(context, layout, width, height, scale_start, scale_end, data, colors[i], i)
       end
     end
