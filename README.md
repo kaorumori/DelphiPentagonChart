@@ -12,7 +12,7 @@ https://delphi-pentagon.defrag.works/chart?start=2020&end=2030&size=600x320&bgco
 
 ### Parameters
 
-| Name   | Desctiption                    | Sample                        |
+| Name   | Description                    | Sample                        |
 | --     | --                             | --                            |
 | data   | Data for Pentagon Chart        | 2021,2025,2030-2022,2026,2028 |
 | exdata | Data for Circle Chart          | 2023,2026,2029-2024,2026,2028 |
@@ -20,7 +20,7 @@ https://delphi-pentagon.defrag.works/chart?start=2020&end=2030&size=600x320&bgco
 | start  | Start Year for Chart           | 2020                          |
 | end    | End Year for Chart             | 2030                          |
 | scale  | Space for Scale (Dash Lines)   | 5                             |
-| size   | Image Size                     | 600x480                       |
+| size   | Image Size                     | 600x320                       |
 
 ## Testing Locally
 
