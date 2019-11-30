@@ -33,6 +33,10 @@ $ ruby app.rb
 ## Deploy to Cloud Run
 
 ```
+$ gcloud config set project <ProjectID>
+```
+
+```
 $ gcloud builds submit --tag gcr.io/<ProjectID>/<Name>
 ```
 

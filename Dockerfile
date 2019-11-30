@@ -1,6 +1,6 @@
 # Use the official Ruby image.
 # https://hub.docker.com/_/ruby
-FROM ruby:2.5
+FROM ruby:2.6
 
 # Install production dependencies.
 RUN apt-get update && \
