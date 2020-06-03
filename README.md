@@ -41,6 +41,6 @@ $ gcloud builds submit --tag gcr.io/<ProjectID>/<Name>
 ```
 
 ```
-$ gcloud beta run deploy --image gcr.io/<ProjectID>/<Name> --platform managed
+$ gcloud run deploy --image gcr.io/<ProjectID>/<Name> --platform managed
 ```
 
