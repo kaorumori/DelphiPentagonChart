@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cairo (1.16.5)
+    cairo (1.16.6)
       native-package-installer (>= 1.0.3)
       pkg-config (>= 1.2.2)
     cairo-gobject (3.4.3)
@@ -15,18 +15,21 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     native-package-installer (1.0.9)
+    nio4r (2.5.4)
     pango (3.4.3)
       cairo-gobject (= 3.4.3)
       gobject-introspection (= 3.4.3)
-    pkg-config (1.4.1)
+    pkg-config (1.4.4)
+    puma (5.1.1)
+      nio4r (~> 2.0)
     rack (2.2.3)
-    rack-protection (2.0.8.1)
+    rack-protection (2.1.0)
       rack
     ruby2_keywords (0.0.2)
-    sinatra (2.0.8.1)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
 
@@ -35,8 +38,9 @@ PLATFORMS
 
 DEPENDENCIES
   pango
+  puma
   rack (>= 2.0.6)
   sinatra
 
 BUNDLED WITH
-   2.1.4
+   2.2.3
