@@ -1,6 +1,6 @@
 # Use the official Ruby image.
 # https://hub.docker.com/_/ruby
-FROM ruby:3.0
+FROM ruby:3.1
 
 # Install production dependencies.
 RUN apt-get update && \

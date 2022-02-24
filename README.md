@@ -41,6 +41,7 @@ $ gcloud builds submit --tag gcr.io/<ProjectID>/<Name>
 ```
 
 ```
-$ gcloud run deploy --image gcr.io/<ProjectID>/<Name> --platform managed
+$ gcloud run deploy --image gcr.io/<ProjectID>/<Name> --platform managed \
+    --region us-central1 --set-env-vars RACK_ENV=production
 ```
 
