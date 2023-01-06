@@ -9,7 +9,7 @@ Set parameters in url.
 ### Parameters
 
 | Name    | Description                    | Sample                        |
-| --      | --                             | --                            |
+| ------- | ------------------------------ | ----------------------------- |
 | data    | Data for Pentagon Chart        | 2021,2025,2030-2022,2026,2028 |
 | exdata  | Data for Circle Chart          | 2023,2026,2029-2024,2026,2028 |
 | colors  | Colors for Pentagon and Circle | ffffff-ff7f50                 |
@@ -27,17 +27,3 @@ $ ruby app.rb
 ```
 
 ## Deploy to Cloud Run
-
-```
-$ gcloud config set project <ProjectID>
-```
-
-```
-$ gcloud builds submit --tag gcr.io/<ProjectID>/<Name>
-```
-
-```
-$ gcloud run deploy --image gcr.io/<ProjectID>/<Name> --platform managed \
-    --region us-central1 --set-env-vars RACK_ENV=production
-```
-
