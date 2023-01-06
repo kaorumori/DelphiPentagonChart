@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'rack', '>= 2.0.6'
+ruby '3.2.0'
+
+gem 'sinatra', '>= 3.0'
+gem 'rack'
 gem 'puma'
 
 gem 'pango'

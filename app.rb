@@ -3,7 +3,7 @@ require 'sinatra'
 require './chart.rb'
 
 get '/' do
-  redirect 'https://github.com/defragworks/DelphiPentagonChart'
+  'DelphiPentagonChart'
 end
 
 get '/chart' do
