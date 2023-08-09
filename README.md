@@ -21,9 +21,12 @@ Set parameters in url.
 
 ## Testing Locally
 
-```
-$ bundle
-$ ruby app.rb
+```sh
+ruby app.rb
 ```
 
-## Deploy to Cloud Run
+## Deploy to Fly.io
+
+```sh
+fly deploy
+```
