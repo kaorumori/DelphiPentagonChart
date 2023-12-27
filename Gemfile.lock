@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cairo (1.17.12)
+    cairo (1.17.13)
       native-package-installer (>= 1.0.3)
       pkg-config (>= 1.2.2)
       red-colors
@@ -16,12 +16,12 @@ GEM
     matrix (0.4.2)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    native-package-installer (1.1.8)
-    nio4r (2.5.9)
+    native-package-installer (1.1.9)
+    nio4r (2.7.0)
     pango (4.2.0)
       cairo-gobject (= 4.2.0)
       gobject-introspection (= 4.2.0)
-    pkg-config (1.5.5)
+    pkg-config (1.5.6)
     puma (6.4.0)
       nio4r (~> 2.0)
     rack (2.2.8)
@@ -47,7 +47,7 @@ DEPENDENCIES
   sinatra (>= 3.0)
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.3.0p0
 
 BUNDLED WITH
-   2.4.17
+   2.5.3
