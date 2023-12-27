@@ -1,4 +1,4 @@
-ARG RUBY_VERSION=3.2.2
+ARG RUBY_VERSION=3.3.0
 FROM ruby:$RUBY_VERSION-slim as base
 
 # Rack app lives here
@@ -15,7 +15,7 @@ FROM base as build
 # Install packages needed to build gems
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential \
-            libcairo2-dev libpango1.0-dev libgirepository1.0-dev
+    libcairo2-dev libpango1.0-dev libgirepository1.0-dev
 
 # Install application gems
 COPY Gemfile* .
@@ -28,7 +28,7 @@ FROM base
 # Install packages for rackup
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential \
-            libcairo2-dev libpango1.0-dev libgirepository1.0-dev
+    libcairo2-dev libpango1.0-dev libgirepository1.0-dev
 
 # Run and own the application files as a non-root user for security
 RUN useradd ruby --home /app --shell /bin/bash
