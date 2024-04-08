@@ -4,6 +4,7 @@ ruby '3.3.0'
 
 gem 'sinatra', '>= 3.0'
 gem 'rack'
+gem 'rackup'
 gem 'puma'
 
 gem 'pango'
