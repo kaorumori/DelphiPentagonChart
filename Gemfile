@@ -1,10 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '3.3.0'
+ruby "3.3.2"
 
-gem 'sinatra', '>= 3.0'
-gem 'rack'
-gem 'rackup'
-gem 'puma'
+gem "sinatra"
+gem "rack"
+gem "rackup"
+gem "puma"
 
-gem 'pango'
+gem "pango"
